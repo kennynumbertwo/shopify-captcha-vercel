@@ -1,5 +1,18 @@
 export default async function handler(req, res) {
-  // Handle preflight requests (CORS headers are configured in vercel.json)
+  // Define allowed origins
+  const allowedOrigins = ['https://www.billyreid.com', 'http://127.0.0.1:9292'];
+
+  const origin = req.headers.origin;
+
+  // Set CORS headers dynamically
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
+
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Handle preflight requests
   if (req.method === 'OPTIONS') {
     res.status(200).end();
     return;
