@@ -10,7 +10,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://www.billyreid.com"
+          "value": "https://www.billyreid.com, http://127.0.0.1:9292"
         },
         {
           "key": "Access-Control-Allow-Methods",
