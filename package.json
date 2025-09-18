@@ -1,0 +1,24 @@
+{
+  "name": "shopify-captcha-vercel",
+  "version": "1.0.0",
+  "description": "Serverless CAPTCHA verification for Shopify stores using Google reCAPTCHA and Vercel Functions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shopify",
+    "captcha",
+    "recaptcha",
+    "vercel",
+    "serverless"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
